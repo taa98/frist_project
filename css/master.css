@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+    --color1:#46577A;
+    --color2:#8696BD;
+    --color3:#e2f0ff;
+    --color4:#ffc727;
+    --color5:#293B5C;
+    --color6:#66769B;
+}
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: var(--color1);
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    padding: 10PX 200PX;
+    align-items: center;
+}
+
+.logo {
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--color3);
+    text-transform: uppercase;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500px;
+    color: var(--color3);
+    padding-left: 30px;
+    /* transition: 0.5s; */
+}
+
+nav a:hover {
+    color: var(--color4);
+}
+
+section {
+    padding: 100px 200px;
+}
+
+
+
+
+/* ---------------------------------------------------------------
+--------------     main section      --------------------------
+--------------------------------------------------------------- */
+
+
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(../imgs/shap1.png) no-repeat;
+    background-size: 400px;
+    background-position: 85% 50%;
+    background-attachment: scroll;
+}
+
+.main h2 {
+    text-transform: capitalize;
+    color: var(--color2);
+    font-size: 1.4em;
+    font-weight: 600;
+}
+
+.main h2 span {
+    display: inline-block;
+    margin-top: 10px;
+    color: var(--color5);
+    font-size: 3em;
+    font-weight: 600;
+}
+
+.main h3 {
+    color: var(--color2);
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.main-btn {
+    color: var(--color4);
+    /* background-color: var(--color5); */
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 30px;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    transition: 0.5s ease;
+    border: solid 3px var(--color4);
+}
+
+.main-btn:hover {
+    color: var(--color5);
+    background-color:var(--color4);
+    transform: scale(1.1);
+}
+
+.social-icons a {
+    color: var(--color5);
+    font-size: 1.7em;
+    padding-right: 15px;
+    transition: 0.6s ease;
+}
+
+.social-icons a:hover {
+    color: var(--color4);
+}
+
+
+
+
+/* ---------------------------------------------------------------
+--------------     cards section   ----------------------------
+--------------------------------------------------------------- */
+
+
+
+.cards {
+    background-color: var(--color5);
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    color: var(--color4);
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #fff;
+    width: 21.25em;
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.5s ease;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    /* اقتراح الظل يكون اصفر - سماوي */
+    box-shadow: 0 5px 15px  rgba(134, 150, 189, 0.688) /*rgba(255, 197, 39, 0.549); */;
+    background-color: var(--color4);
+}
+
+.icon {
+    color: var(--color1);
+    font-size: 8em;
+    text-align: center;
+}
+
+.info {
+    text-align: center;
+}
+.info h3{
+    color: var(--color1);
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+}
+
+
+
+
+/* ---------------------------------------------------------------
+--------------     projects section   --------------------------
+--------------------------------------------------------------- */
+
+
+
+.projects .content {
+    margin-top: 30px;
+}
+
+.project-card {
+    background-color: #fff;
+    /* هنا ممكن الغي الايطار واخليه ظل واغير درجة الظل من 15 الى 25*/
+    border: 1px solid var(--color5);
+    box-shadow: 0 5px 15px rgba(1, 1, 1, 0.449);
+    min-height: 14em;
+    width: 20.8em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.5s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.1);
+}
+
+.project-image img{
+    width: 100%;
+    background-color: var(--color5);
+}
+
+.project-info {
+    padding: 1em;
+}
+
+.project-category {
+    font-size: 0.8em;
+    color: #000;
+}
+
+.project-title {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 10px;
+}
+
+.more-details {
+    text-decoration: none;
+    color: var(--color1);
+    transition: 0.5s ease;
+}
+
+.more-details:hover {
+    color: var(--color4);
+}
+
+
+
+
+/* ---------------------------------------------------------------
+--------------     contact section   ----------------------------
+--------------------------------------------------------------- */
+
+
+
+.contact .icon {
+    font-size: 4.5em;
+}
+
+.contact .info h3 {
+    color: #000;
+}
+
+.contact .info p {
+    font-size: 1.5em;
+}
+
+
+
+
+/* ---------------------------------------------------------------
+------------------------     footer   ----------------------------
+------------------------------------------------------------------ */
+
+
+.footer {
+    padding: 1.5em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-title  {
+    color: var(--color1);
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.footer-title span {
+    color: var(--color2);
+}
+
+.footer .social-icons a {
+    font-size: 1.3em;
+    padding: 0 12px 0 0;
+}
+
+
+
+
+/* ---------------------------------------------------------------
+------------------------   media   ----------------------------
+------------------------------------------------------------------ */
+
+
+
+@media (max-width:1023px){
+    
+    section {
+        padding: 50px 100px;
+    }
+    
+    header {
+        padding: 10PX 100PX;
+    }
+
+    .main {
+        background-size: 350px;
+    }
+
+    .main h2 {
+        font-size: 1.2em;
+    }
+
+    .main h2 span {
+        font-size: 2.5em;
+        font-weight: 700;
+    }
+
+    .main h3 {
+        font-size: 1.2em;
+        font-weight: 600;
+    }
+}
+
