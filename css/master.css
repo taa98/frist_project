@@ -310,7 +310,7 @@ section {
 
 
 
-@media (max-width:1023px){
+@media (min-width:1000px) and (max-width:1140px){
     
     section {
         padding: 50px 100px;
